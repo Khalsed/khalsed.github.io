@@ -36,16 +36,16 @@
         }
 
         .logo {
-            height: 50px;
-            margin-bottom: 20px;
+            margin-bottom: 25px;
             display: flex;
             align-items: center;
             justify-content: center;
         }
 
         .logo svg {
-            height: 100%;
-            width: auto;
+            width: 120px;
+            height: auto;
+            display: block;
         }
 
         h1 {
@@ -176,6 +176,10 @@
             .access-links {
                 gap: 10px;
             }
+
+            .logo svg {
+                width: 100px;
+            }
         }
 
         @media (max-width: 480px) {
@@ -205,17 +209,22 @@
                 width: 100%;
                 min-width: unset;
             }
+
+            .logo svg {
+                width: 90px;
+            }
         }
     </style>
 </head>
 <body>
     <div class="header">
         <div class="logo">
-            <svg viewBox="0 0 200 100" xmlns="http://www.w3.org/2000/svg">
+            <svg viewBox="0 0 240 80" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid meet">
                 <!-- Orange arc symbol -->
-                <path d="M 40 30 Q 50 20 60 30 Q 70 40 60 60 Q 50 50 40 40" fill="none" stroke="#FF8C00" stroke-width="6" stroke-linecap="round"/>
+                <path d="M 30 35 Q 45 20 60 30 Q 75 45 65 70 Q 50 55 30 45" fill="none" stroke="#FF8C00" stroke-width="7" stroke-linecap="round" stroke-linejoin="round"/>
+                <path d="M 65 70 Q 55 65 50 55" fill="none" stroke="#FFD700" stroke-width="5" stroke-linecap="round"/>
                 <!-- AREAS text -->
-                <text x="80" y="65" font-family="Arial, sans-serif" font-size="48" font-weight="bold" fill="#1a2642">areas</text>
+                <text x="100" y="58" font-family="Arial, sans-serif" font-size="52" font-weight="bold" fill="#1a2642" letter-spacing="2">areas</text>
             </svg>
         </div>
         <h1>⏱️ Accès à la gestion des temps</h1>
